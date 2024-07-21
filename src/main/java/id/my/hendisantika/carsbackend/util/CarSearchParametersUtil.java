@@ -149,4 +149,15 @@ public class CarSearchParametersUtil {
         return Integer.parseInt(number);
     }
 
+    public static String getPropertyFromSortString(String sortString) {
+        if (sortString.equals("Sort by Age")) {
+            return "year";
+        } else if (sortString.equals("Sort by Sale Date")) {
+            return "sale date";
+        } else if (sortString.equals("Sort by Odometer")) {
+            return "odometer";
+        } else {
+            return "";
+        }
+    }
 }

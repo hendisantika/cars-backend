@@ -3,6 +3,9 @@ package id.my.hendisantika.carsbackend.util;
 import id.my.hendisantika.carsbackend.model.CarSearchParameters;
 import org.springframework.util.StringUtils;
 
+import java.sql.Date;
+import java.time.LocalDate;
+
 /**
  * Created by IntelliJ IDEA.
  * Project : cars-backend
@@ -132,5 +135,12 @@ public class CarSearchParametersUtil {
         public int getEnd() {
             return end;
         }
+    }
+
+    public static Date getDateFromCustomDate(String input) {
+        int days = extractDays(input);
+        LocalDate currentDate = LocalDate.now();
+        LocalDate targetDate = currentDate.minusDays(days);
+        return Date.valueOf(targetDate);
     }
 }

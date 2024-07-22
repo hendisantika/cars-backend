@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: mysql
+  application:
+    name: 2cloud
+  #  datasource:
+  #    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    url: jdbc:mysql://localhost:3306/cars?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Jakarta&useSSL=false&allowPublicKeyRetrieval=true
+  #    password: root
+  #    username: root
+  #    jpa:
+  #      generate-ddl: true
+  #      hibernate:
+  #        ddl-auto: update
+  #      show-sql: true
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  port: 8080

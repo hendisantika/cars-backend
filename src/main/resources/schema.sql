@@ -32,7 +32,7 @@ CREATE TABLE used_car_sales
     custom_date       INT(3),
     badges            VARCHAR(20),
     body_type         VARCHAR(10),
-    body_type_config VARCHAR(20),
+    body_type_config  VARCHAR(20),
     fuel_type         VARCHAR(6),
     cylinders         INT(1),
     division          VARCHAR(20),

@@ -7,7 +7,6 @@ import id.my.hendisantika.carsbackend.model.ResponseStatus;
 import id.my.hendisantika.carsbackend.service.UsedCarSalesService;
 import id.my.hendisantika.carsbackend.util.CarSearchParametersUtil;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,10 +26,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin
 @RequestMapping("/cars")
-@RequiredArgsConstructor(onConstructor_ = {@Autowired})
+@RequiredArgsConstructor
 public class UsedCarSalesController {
 
-    public final UsedCarSalesService usedCarSalesService;
+    private final UsedCarSalesService usedCarSalesService;
 
     @GetMapping
     public Response getCars(

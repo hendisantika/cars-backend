@@ -4,7 +4,6 @@ import id.my.hendisantika.carsbackend.entity.UsedCarSales;
 import id.my.hendisantika.carsbackend.model.CarSearchParameters;
 import id.my.hendisantika.carsbackend.repository.UsedCarSalesRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,7 +19,7 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Service
-@RequiredArgsConstructor(onConstructor_ = {@Autowired})
+@RequiredArgsConstructor
 public class UsedCarSalesService {
 
     private final UsedCarSalesRepository usedCarSalesRepository;
